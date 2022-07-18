@@ -53,10 +53,10 @@ class CommentForm extends Component {
           <ModalBody>
             <LocalForm onSubmit={this.handleSubmit}>
               <Row className="form-group">
-                <Label htmlFor="rating" md={2}>
+                <Label htmlFor="rating" md={3}>
                   Rating
                 </Label>
-                <Col md={10}>
+                <Col md={9}>
                   <Control.select
                     model=".rating"
                     id="rating"
@@ -71,10 +71,10 @@ class CommentForm extends Component {
                 </Col>
               </Row>
               <Row className="form-group">
-                <Label htmlFor="name" md={2}>
+                <Label htmlFor="name" md={3}>
                   Your Name
                 </Label>
-                <Col md={10}>
+                <Col md={9}>
                   <Control.text
                     model=".name"
                     id="name"
@@ -99,8 +99,10 @@ class CommentForm extends Component {
                 </Col>
               </Row>
               <Row className="form-group">
-                <Label htmlFor="comment">Comment</Label>
-                <Col>
+                <Label htmlFor="comment" md={3}>
+                  Comment
+                </Label>
+                <Col md={9}>
                   <Control.textarea
                     model=".textarea"
                     id="comment"
